@@ -1,0 +1,23 @@
+{
+    "name": "Mobile-3D-Engine",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "runArgs": [
+        "--privileged"
+    ],
+    "containerEnv": {
+        "DISPLAY": ":0"
+    },
+    "forwardPorts": [6080],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    }
+}
+
